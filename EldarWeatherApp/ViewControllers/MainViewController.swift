@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         
 
         mainTableView.register(UINib(nibName: "MainHourlyTableViewCell", bundle: nil), forCellReuseIdentifier: "MainHourlyTableViewCell")
+        mainTableView.register(UINib(nibName: "MainDailyTableViewCell", bundle: nil), forCellReuseIdentifier: "MainDailyTableViewCell")
+        
     }
     
     
