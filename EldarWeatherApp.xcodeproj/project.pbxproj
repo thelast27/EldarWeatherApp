@@ -141,8 +141,7 @@
 				4DBE8526288FE67800814A19 /* MainHourlyTableViewSection */,
 				4DBE8525288FE53000814A19 /* DailyTableview */,
 				4DBE852C288FE6E900814A19 /* MainDailyTableViewSection */,
-				4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */,
-				4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */,
+				4DBE8531289017E900814A19 /* MainCurrentWeatherCells */,
 			);
 			path = MainTableViewCells;
 			sourceTree = "<group>";
@@ -209,6 +208,15 @@
 				4DBE8528288FE6B300814A19 /* MainDailyTableViewCell.xib */,
 			);
 			path = MainDailyTableViewSection;
+			sourceTree = "<group>";
+		};
+		4DBE8531289017E900814A19 /* MainCurrentWeatherCells */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */,
+				4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */,
+			);
+			path = MainCurrentWeatherCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
