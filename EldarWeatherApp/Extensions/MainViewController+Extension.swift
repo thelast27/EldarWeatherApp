@@ -19,7 +19,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainCurrentWeatherTableViewCell", for: indexPath) as? MainCurrentWeatherTableViewCell else { return UITableViewCell() }
+            if let current = currentAndForecustedWeather {
+                cell.update(date: current)
+            }
+            return cell
+    } else if indexPath.section == 1 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainHourlyTableViewCell", for: indexPath) as? MainHourlyTableViewCell else { return UITableViewCell() }
             if let hourly = hourlyWeather {
                 cell.update(with: hourly)
