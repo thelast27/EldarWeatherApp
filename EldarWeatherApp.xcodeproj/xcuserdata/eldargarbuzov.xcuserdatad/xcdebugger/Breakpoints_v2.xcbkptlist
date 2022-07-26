@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8D04463D-B415-4C13-8070-7A8E03D4EFA3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EldarWeatherApp/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - c1a62c469d08eaf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.hourlyWeather.getter : Swift.Optional&lt;Swift.Array&lt;EldarWeatherApp.HourlyWeatherData&gt;&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - 1d46af2831cf1ac4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.hourlyWeather.setter : Swift.Optional&lt;Swift.Array&lt;EldarWeatherApp.HourlyWeatherData&gt;&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - 3f1354a21b2c86f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.hourlyWeather.modify : Swift.Optional&lt;Swift.Array&lt;EldarWeatherApp.HourlyWeatherData&gt;&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - 394a1659c885dc60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.hourlyWeather.modify : Swift.Optional&lt;Swift.Array&lt;EldarWeatherApp.HourlyWeatherData&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - b6a1dcd3aadfc248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EldarWeatherApp.ViewController"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "728">
+               </Location>
+               <Location
+                  uuid = "BDBF9C72-6B08-40E2-BFDE-5439DE756FE2 - b3e4de7c2f895743"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EldarWeatherApp.ViewController&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "685">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED33B2C6-AB2F-405C-BC59-81542DDFF431"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EldarWeatherApp/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8795F04B-228E-4FEE-A5BB-9FC378524AA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EldarWeatherApp/MainViewController+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8795F04B-228E-4FEE-A5BB-9FC378524AA6 - 83ed0f8b1040db31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "8795F04B-228E-4FEE-A5BB-9FC378524AA6 - 83ed0f8b1040db31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "577">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EldarWeatherApp/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - 77060d3ef4019f7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.currentAndForecustedWeather.getter : Swift.Optional&lt;EldarWeatherApp.CurrentAndForecastWeather&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "1050">
+               </Location>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - c1b30bd77290370e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.currentAndForecustedWeather.setter : Swift.Optional&lt;EldarWeatherApp.CurrentAndForecastWeather&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "1090">
+               </Location>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - 66cfea3ebe31157f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.currentAndForecustedWeather.modify : Swift.Optional&lt;EldarWeatherApp.CurrentAndForecastWeather&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - 203bc7972073854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.currentAndForecustedWeather.modify : Swift.Optional&lt;EldarWeatherApp.CurrentAndForecastWeather&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - b6a1dcd3aadfc229"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EldarWeatherApp.ViewController"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "F94A7456-A879-4D90-B3E8-BCAF03FC506D - b3e4de7c2f895722"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EldarWeatherApp.ViewController&gt;"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "233">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
