@@ -16,9 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-n6-52a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xTt-Zh-ANo">
+                                <rect key="frame" x="0.0" y="0.0" width="426" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oH-Q0-aTe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sld-vo-zCN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-n6-52a">
+                                <rect key="frame" x="0.0" y="-59" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="MHH-h8-6lx"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="V3j-yE-Edc"/>
@@ -28,19 +39,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4oH-Q0-aTe" secondAttribute="bottom" id="3lZ-FD-GuO"/>
                             <constraint firstItem="6ky-n6-52a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8v0-3G-c5n"/>
-                            <constraint firstAttribute="bottom" secondItem="6ky-n6-52a" secondAttribute="bottom" id="92K-4b-OOT"/>
+                            <constraint firstAttribute="bottom" secondItem="6ky-n6-52a" secondAttribute="bottom" constant="93" id="92K-4b-OOT"/>
+                            <constraint firstItem="xTt-Zh-ANo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="CkE-JZ-dbM"/>
+                            <constraint firstItem="4oH-Q0-aTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IZv-Af-UG6"/>
+                            <constraint firstItem="4oH-Q0-aTe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jaj-tO-3xg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xTt-Zh-ANo" secondAttribute="bottom" constant="-34" id="MiH-gh-tvd"/>
                             <constraint firstAttribute="trailing" secondItem="6ky-n6-52a" secondAttribute="trailing" id="PNb-JK-seP"/>
-                            <constraint firstItem="6ky-n6-52a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="foa-0z-4g3"/>
+                            <constraint firstItem="xTt-Zh-ANo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WR8-70-1gv"/>
+                            <constraint firstItem="6ky-n6-52a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-59" id="foa-0z-4g3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTt-Zh-ANo" secondAttribute="trailing" constant="-12" id="meF-b5-dVm"/>
+                            <constraint firstAttribute="trailing" secondItem="4oH-Q0-aTe" secondAttribute="trailing" id="uhn-82-Dll"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundPic" destination="xTt-Zh-ANo" id="7Om-5D-4QP"/>
                         <outlet property="mainTableView" destination="6ky-n6-52a" id="8df-qc-Zrr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="64"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>

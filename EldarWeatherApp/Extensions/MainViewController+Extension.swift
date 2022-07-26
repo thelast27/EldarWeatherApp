@@ -57,10 +57,11 @@ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->
 }
 func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     if section == 0 {
-        return "Current weather"
+        return ""
     } else if section == 1 {
         return "Weather forecast for 24h"
     }
     return "Weather forecast for 7 days"
 }
+    
 }

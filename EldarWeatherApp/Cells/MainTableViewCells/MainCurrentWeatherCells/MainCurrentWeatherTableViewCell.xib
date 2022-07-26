@@ -52,6 +52,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="X12-Ur-haq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="77" id="7m8-GJ-F5Y"/>
                     <constraint firstItem="X12-Ur-haq" firstAttribute="top" secondItem="z9k-ft-nU3" secondAttribute="bottom" constant="37" id="H7u-Ik-zvP"/>
@@ -68,6 +69,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cityName" destination="u8g-h2-vNB" id="NUp-xJ-ScV"/>
                 <outlet property="currentTemp" destination="z9k-ft-nU3" id="8Tg-oX-BXM"/>
