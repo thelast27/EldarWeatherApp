@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var backgroundPic: UIImageView!
     
     var weatherManager: RestAPIProviderProtocol = WeatherManager()
     var currentAndForecustedWeather: CurrentAndForecastWeather?
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundPic.image = UIImage(named: "backgroundPic")
         
         weatherManager.getCoordinatesByName(forCity: "Dublin") { [weak self] weatherData in
             guard let self = self else { return }
