@@ -13,42 +13,38 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     let weatherIcon = UIImageView()
     static let key = "HourlyCollectionViewCell"
     
-    var summaryWeatherInfo = UILabel()
-    var textWeatherDiscription = UILabel()
+    var dateLabel = UILabel()
+    var tempLabel = UILabel()
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        summaryWeatherInfo.text = ""
-        summaryWeatherInfo.numberOfLines = 0
-        contentView.addSubview(summaryWeatherInfo)
-        textWeatherDiscription.text = ""
-        textWeatherDiscription.numberOfLines = 0
-        contentView.addSubview(textWeatherDiscription)
+        dateLabel.text = ""
+        dateLabel.numberOfLines = 0
+        contentView.addSubview(dateLabel)
+        tempLabel.text = ""
+        tempLabel.numberOfLines = 0
+        contentView.addSubview(tempLabel)
         contentView.addSubview(weatherIcon)
         
-        summaryWeatherInfo.snp.makeConstraints { make in
-            make.width.equalTo(50)
-            make.height.equalTo(50)
+        dateLabel.snp.makeConstraints { make in
             make.right.left.equalToSuperview().inset(16)
-            make.top.equalToSuperview().inset(8)
+            make.top.equalToSuperview().inset(5)
         }
         
         weatherIcon.snp.makeConstraints { make in
-            make.width.equalTo(50)
-            make.height.equalTo(50)
             make.left.right.equalToSuperview().inset(16)
-            make.top.equalTo(summaryWeatherInfo.snp.bottom).inset(16)
+            make.top.equalTo(dateLabel.snp.bottom).inset(5)
         }
         
-        textWeatherDiscription.snp.makeConstraints { make in
-            make.width.equalTo(50)
-            make.height.equalTo(50)
-            make.left.right.bottom.equalToSuperview().inset(16)
-            make.top.equalTo(weatherIcon.snp.bottom).inset(16)
+        tempLabel.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(16)
+            make.bottom.equalToSuperview().inset(5)
+            make.top.equalTo(weatherIcon.snp.bottom).inset(5)
         }
         
+
 
         
     } 
@@ -62,8 +58,8 @@ class HourlyCollectionViewCell: UICollectionViewCell {
                     self.weatherIcon.image = UIImage(data: iconData)
                 }
             }
-            self.summaryWeatherInfo.text = dt.updateDateFormat(dateFormat: .hours)
-            self.textWeatherDiscription.text = "\(Int(temp))°C"
+            self.dateLabel.text = dt.updateDateFormat(dateFormat: .hours)
+            self.tempLabel.text = "\(Int(temp))°C"
         }
     }
 }
