@@ -55,13 +55,39 @@ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->
     }
     return 150
 }
-func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    if section == 0 {
-        return ""
-    } else if section == 1 {
-        return "Weather forecast for 24h"
-    }
-    return "Weather forecast for 7 days"
-}
+         func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+             if section == 0 {
+                 let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 0))
+                 let label = UILabel()
+                 headerView.addSubview(label)
+         
+                 return headerView
+             } else if section == 1 {
+                 let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
+                 let label = UILabel()
+                 label.frame = CGRect.init(x: 5, y: -5, width: headerView.frame.width-10, height: headerView.frame.height-10)
+                 label.text = "Weather forecast for 24h"
+                 label.font = .boldSystemFont(ofSize: 16)
+                 label.textColor = .gray
+                 headerView.addSubview(label)
+         
+                 return headerView
+             } else if section == 2 {
+                 let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
+                 let label = UILabel()
+                 label.frame = CGRect.init(x: 5, y: -5, width: headerView.frame.width-10, height: headerView.frame.height-10)
+                 label.text = "Weather forecast for 7 days"
+                 label.font = .boldSystemFont(ofSize: 16)
+                 label.textColor = .gray
+                 headerView.addSubview(label)
+         
+                 return headerView
+             }
+            return UIView()
+        }
+    
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//         return 50
+//     }
     
 }
