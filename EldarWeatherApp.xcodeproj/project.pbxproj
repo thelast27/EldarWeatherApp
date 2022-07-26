@@ -32,6 +32,7 @@
 		4DBE852A288FE6B300814A19 /* MainDailyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBE8528288FE6B300814A19 /* MainDailyTableViewCell.xib */; };
 		4DBE852F2890131500814A19 /* MainCurrentWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */; };
 		4DBE85302890131500814A19 /* MainCurrentWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */; };
+		4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8532289020FB00814A19 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		4DBE8528288FE6B300814A19 /* MainDailyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainDailyTableViewCell.xib; sourceTree = "<group>"; };
 		4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrentWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCurrentWeatherTableViewCell.xib; sourceTree = "<group>"; };
+		4DBE8532289020FB00814A19 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3524AC288A95C300EDF0E9 /* MainViewController.swift */,
+				4DBE8532289020FB00814A19 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				4D3524C7288A9D1700EDF0E9 /* MainViewController+Extension.swift in Sources */,
 				4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */,
 				4D3524CD288A9DEE00EDF0E9 /* Int+Extension.swift in Sources */,
+				4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */,
 				4D3524C3288A9B7D00EDF0E9 /* WeatherManager.swift in Sources */,
 				4D3524A9288A95C300EDF0E9 /* AppDelegate.swift in Sources */,
 				4DBE852F2890131500814A19 /* MainCurrentWeatherTableViewCell.swift in Sources */,
