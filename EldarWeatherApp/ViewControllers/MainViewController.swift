@@ -19,24 +19,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         weatherManager.getCoordinatesByName(forCity: "Dublin") { [weak self] weatherData in
             guard let self = self else { return }
             self.currentAndForecustedWeather = weatherData
             self.dailyWeather = weatherData.daily
             self.hourlyWeather = weatherData.hourly
-
-            
-            
-
             DispatchQueue.main.async {
                 self.mainTableView.reloadData()
             }
-          
         }
         
-
+        mainTableView.register(UINib(nibName: "MainCurrentWeatherTableViewCell", bundle: nil), forCellReuseIdentifier: "MainCurrentWeatherTableViewCell")
         mainTableView.register(UINib(nibName: "MainHourlyTableViewCell", bundle: nil), forCellReuseIdentifier: "MainHourlyTableViewCell")
         mainTableView.register(UINib(nibName: "MainDailyTableViewCell", bundle: nil), forCellReuseIdentifier: "MainDailyTableViewCell")
         
