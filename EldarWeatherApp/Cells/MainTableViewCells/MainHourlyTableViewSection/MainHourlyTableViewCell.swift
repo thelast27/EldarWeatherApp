@@ -33,7 +33,7 @@ class MainHourlyTableViewCell: UITableViewCell {
     
 }
 
-extension MainHourlyTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MainHourlyTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (hourlyWeather?.count ?? 0) - 23
@@ -49,4 +49,7 @@ extension MainHourlyTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         }
         return UICollectionViewCell()
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+            return 0
+        }
 }
