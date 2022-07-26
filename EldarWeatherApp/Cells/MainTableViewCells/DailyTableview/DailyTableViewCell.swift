@@ -11,7 +11,7 @@ class DailyTableViewCell: UITableViewCell {
     
     let weatherIcon = UIImageView()
     
-    var key = "DailyTableViewCell"
+    static let key = "DailyTableViewCell"
     var dayLabel = UILabel()
     var tempLabel = UILabel()
     
