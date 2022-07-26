@@ -25,7 +25,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.update(with: hourly)
             }
             return cell
-        }
+       } else if indexPath.section == 2 {
+           guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainDailyTableViewCell", for: indexPath) as? MainDailyTableViewCell else { return UITableViewCell() }
+           if let daily = dailyWeather {
+               cell.update(with: daily)
+           }
+           return cell
+       }
         return UITableViewCell()
     }
 
