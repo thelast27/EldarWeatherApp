@@ -21,6 +21,12 @@
 		4D3524CD288A9DEE00EDF0E9 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3524CC288A9DEE00EDF0E9 /* Int+Extension.swift */; };
 		4D3524D0288A9E2E00EDF0E9 /* MainHourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3524CE288A9E2E00EDF0E9 /* MainHourlyTableViewCell.swift */; };
 		4D3524D1288A9E2E00EDF0E9 /* MainHourlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3524CF288A9E2E00EDF0E9 /* MainHourlyTableViewCell.xib */; };
+		4D86F81D2894031700F393D7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4D86F81C2894031600F393D7 /* Realm */; };
+		4D86F81F2894031700F393D7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D86F81E2894031700F393D7 /* RealmSwift */; };
+		4D86F8212894035D00F393D7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F8202894035D00F393D7 /* HistoryViewController.swift */; };
+		4D86F8232894039400F393D7 /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86F8222894039400F393D7 /* HistoryViewController.storyboard */; };
+		4D86F8262894081800F393D7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F8242894081800F393D7 /* HistoryTableViewCell.swift */; };
+		4D86F8272894081800F393D7 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */; };
 		4DB046C0288AA0A700583567 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB046BF288AA0A700583567 /* SnapKit */; };
 		4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */; };
 		4DBE8518288FE38800814A19 /* HourlyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */; };
@@ -57,6 +63,10 @@
 		4D3524CC288A9DEE00EDF0E9 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		4D3524CE288A9E2E00EDF0E9 /* MainHourlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHourlyTableViewCell.swift; sourceTree = "<group>"; };
 		4D3524CF288A9E2E00EDF0E9 /* MainHourlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHourlyTableViewCell.xib; sourceTree = "<group>"; };
+		4D86F8202894035D00F393D7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4D86F8222894039400F393D7 /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
+		4D86F8242894081800F393D7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8515288FE38800814A19 /* GeocodingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingModel.swift; sourceTree = "<group>"; };
@@ -80,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D86F81F2894031700F393D7 /* RealmSwift in Frameworks */,
+				4D86F81D2894031700F393D7 /* Realm in Frameworks */,
 				4DB046C0288AA0A700583567 /* SnapKit in Frameworks */,
 				5DB39F6E3D3202F0A9155A26 /* Pods_EldarWeatherApp.framework in Frameworks */,
 			);
@@ -124,12 +136,22 @@
 			path = EldarWeatherApp;
 			sourceTree = "<group>";
 		};
+		4D86F8282894081D00F393D7 /* HistoryTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4D86F8242894081800F393D7 /* HistoryTableViewCell.swift */,
+				4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */,
+			);
+			path = HistoryTableViewCells;
+			sourceTree = "<group>";
+		};
 		4DBE850C288FE27100814A19 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				4D3524AC288A95C300EDF0E9 /* MainViewController.swift */,
 				4DBE8532289020FB00814A19 /* TabBarViewController.swift */,
 				4DC028DE2893D4DF003371CC /* MapViewController.swift */,
+				4D86F8202894035D00F393D7 /* HistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBE850F288FE2CA00814A19 /* MainTableViewCells */,
+				4D86F8282894081D00F393D7 /* HistoryTableViewCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -198,6 +221,7 @@
 			children = (
 				4D3524AE288A95C300EDF0E9 /* Main.storyboard */,
 				4DC028E02893D513003371CC /* MapViewController.storyboard */,
+				4D86F8222894039400F393D7 /* HistoryViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -275,6 +299,8 @@
 			name = EldarWeatherApp;
 			packageProductDependencies = (
 				4DB046BF288AA0A700583567 /* SnapKit */,
+				4D86F81C2894031600F393D7 /* Realm */,
+				4D86F81E2894031700F393D7 /* RealmSwift */,
 			);
 			productName = EldarWeatherApp;
 			productReference = 4D3524A5288A95C300EDF0E9 /* EldarWeatherApp.app */;
@@ -306,6 +332,7 @@
 			mainGroup = 4D35249C288A95C300EDF0E9;
 			packageReferences = (
 				4DB046BE288AA0A700583567 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4D86F81B2894031600F393D7 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 4D3524A6288A95C300EDF0E9 /* Products */;
 			projectDirPath = "";
@@ -323,10 +350,12 @@
 			files = (
 				4D3524D1288A9E2E00EDF0E9 /* MainHourlyTableViewCell.xib in Resources */,
 				4D3524B5288A95C500EDF0E9 /* LaunchScreen.storyboard in Resources */,
+				4D86F8272894081800F393D7 /* HistoryTableViewCell.xib in Resources */,
 				4D3524B2288A95C500EDF0E9 /* Assets.xcassets in Resources */,
 				4DBE852A288FE6B300814A19 /* MainDailyTableViewCell.xib in Resources */,
 				4D3524B0288A95C300EDF0E9 /* Main.storyboard in Resources */,
 				4DC028E12893D513003371CC /* MapViewController.storyboard in Resources */,
+				4D86F8232894039400F393D7 /* HistoryViewController.storyboard in Resources */,
 				4D3524CB288A9D7A00EDF0E9 /* HourlyCollectionViewCell.xib in Resources */,
 				4DBE8524288FE52900814A19 /* DailyTableViewCell.xib in Resources */,
 				4DBE85302890131500814A19 /* MainCurrentWeatherTableViewCell.xib in Resources */,
@@ -385,11 +414,13 @@
 				4DBE8529288FE6B300814A19 /* MainDailyTableViewCell.swift in Sources */,
 				4D3524C5288A9BE000EDF0E9 /* APIManager.swift in Sources */,
 				4DBE8523288FE52900814A19 /* DailyTableViewCell.swift in Sources */,
+				4D86F8212894035D00F393D7 /* HistoryViewController.swift in Sources */,
 				4D3524AD288A95C300EDF0E9 /* MainViewController.swift in Sources */,
 				4DBE851A288FE38800814A19 /* GeneralWeatherModel.swift in Sources */,
 				4D3524D0288A9E2E00EDF0E9 /* MainHourlyTableViewCell.swift in Sources */,
 				4D3524C7288A9D1700EDF0E9 /* MainViewController+Extension.swift in Sources */,
 				4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */,
+				4D86F8262894081800F393D7 /* HistoryTableViewCell.swift in Sources */,
 				4DC028E32893DB39003371CC /* MapVC+Extension.swift in Sources */,
 				4D3524CD288A9DEE00EDF0E9 /* Int+Extension.swift in Sources */,
 				4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */,
@@ -622,6 +653,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4D86F81B2894031600F393D7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.2;
+			};
+		};
 		4DB046BE288AA0A700583567 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -633,6 +672,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D86F81C2894031600F393D7 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D86F81B2894031600F393D7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4D86F81E2894031700F393D7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D86F81B2894031600F393D7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		4DB046BF288AA0A700583567 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4DB046BE288AA0A700583567 /* XCRemoteSwiftPackageReference "SnapKit" */;
