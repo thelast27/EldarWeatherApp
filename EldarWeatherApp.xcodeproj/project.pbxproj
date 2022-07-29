@@ -27,6 +27,8 @@
 		4D86F8232894039400F393D7 /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86F8222894039400F393D7 /* HistoryViewController.storyboard */; };
 		4D86F8262894081800F393D7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F8242894081800F393D7 /* HistoryTableViewCell.swift */; };
 		4D86F8272894081800F393D7 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */; };
+		4D86F82A289408EF00F393D7 /* RealmDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F829289408EF00F393D7 /* RealmDataBaseManager.swift */; };
+		4D86F82C2894092500F393D7 /* RealmWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F82B2894092500F393D7 /* RealmWeatherModel.swift */; };
 		4DB046C0288AA0A700583567 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB046BF288AA0A700583567 /* SnapKit */; };
 		4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */; };
 		4DBE8518288FE38800814A19 /* HourlyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */; };
@@ -67,6 +69,8 @@
 		4D86F8222894039400F393D7 /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
 		4D86F8242894081800F393D7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		4D86F829289408EF00F393D7 /* RealmDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataBaseManager.swift; sourceTree = "<group>"; };
+		4D86F82B2894092500F393D7 /* RealmWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8515288FE38800814A19 /* GeocodingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingModel.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				4DBE8516288FE38800814A19 /* GeneralWeatherModel.swift */,
 				4DBE8515288FE38800814A19 /* GeocodingModel.swift */,
 				4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */,
+				4D86F82B2894092500F393D7 /* RealmWeatherModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			children = (
 				4D3524C2288A9B7D00EDF0E9 /* WeatherManager.swift */,
 				4D3524C4288A9BE000EDF0E9 /* APIManager.swift */,
+				4D86F829289408EF00F393D7 /* RealmDataBaseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D86F82C2894092500F393D7 /* RealmWeatherModel.swift in Sources */,
 				4DBE8529288FE6B300814A19 /* MainDailyTableViewCell.swift in Sources */,
 				4D3524C5288A9BE000EDF0E9 /* APIManager.swift in Sources */,
 				4DBE8523288FE52900814A19 /* DailyTableViewCell.swift in Sources */,
@@ -431,6 +438,7 @@
 				4D3524AB288A95C300EDF0E9 /* SceneDelegate.swift in Sources */,
 				4D3524CA288A9D7A00EDF0E9 /* HourlyCollectionViewCell.swift in Sources */,
 				4DBE8518288FE38800814A19 /* HourlyWeatherModel.swift in Sources */,
+				4D86F82A289408EF00F393D7 /* RealmDataBaseManager.swift in Sources */,
 				4DBE8519288FE38800814A19 /* GeocodingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
