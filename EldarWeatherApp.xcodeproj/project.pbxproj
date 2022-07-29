@@ -136,7 +136,6 @@
 				4DBE851B288FE39900814A19 /* Models */,
 				4DBE851E288FE3DC00814A19 /* Storyboards */,
 				4D3524B1288A95C500EDF0E9 /* Assets.xcassets */,
-				4D3524B3288A95C500EDF0E9 /* LaunchScreen.storyboard */,
 				4D3524B6288A95C500EDF0E9 /* Info.plist */,
 			);
 			path = EldarWeatherApp;
@@ -228,6 +227,7 @@
 		4DBE851E288FE3DC00814A19 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4D3524B3288A95C500EDF0E9 /* LaunchScreen.storyboard */,
 				4D3524AE288A95C300EDF0E9 /* Main.storyboard */,
 				4DC028E02893D513003371CC /* MapViewController.storyboard */,
 				4D86F8222894039400F393D7 /* HistoryViewController.storyboard */,
