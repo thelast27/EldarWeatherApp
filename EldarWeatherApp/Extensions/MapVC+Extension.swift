@@ -20,6 +20,7 @@ extension MapViewController: GMSMapViewDelegate {
                 self.currentTemp.isHidden = false
                 self.currentTemp.text = "\(Int(temp)) °"
                 self.nameOfPoint.text = cityName
+                self.realmManager.receiveData(data: weatherData)
             }
         }
     }

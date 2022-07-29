@@ -17,6 +17,7 @@ class MapViewController: UIViewController {
     
     var weatherManagerDelegte: RestAPIProviderProtocol = WeatherManager()
     var weatherParamsDelegate: CurrentAndForecastWeather?
+    var realmManager: RealmDataBaseProtocol = RealmManager()
 
     
     override func viewDidLoad() {
