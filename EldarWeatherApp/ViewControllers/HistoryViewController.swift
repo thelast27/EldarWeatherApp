@@ -16,19 +16,32 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         
         historyTableView.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryTableViewCell")
-
-   
+        
+        notificationToken = resultsRealmData.observe { [weak self] (changes: RealmCollectionChange) in
+            guard let tableView = self?.historyTableView else { return }
+            switch changes {
+            case .initial:
+                tableView.reloadData()
+            case .update(_, let deletions, let insertions, let modifications):
+                tableView.performBatchUpdates({
+                    tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0) }),
+                                         with: .automatic)
+                    tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
+                                         with: .automatic)
+                    tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
+                                         with: .automatic)
+                })
+            case .error(let error):
+                fatalError("\(error)")
+            }
+        }
+        historyTableView.reloadData()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    deinit {
+        notificationToken?.invalidate()
+        
     }
-    */
 
 }
