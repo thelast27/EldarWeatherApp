@@ -15,13 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIM-9p-Zrv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="804"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRp-n7-e8h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TsI-hG-mIa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UIM-9p-Zrv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="G9v-5T-21H"/>
+                            <constraint firstAttribute="bottom" secondItem="UIM-9p-Zrv" secondAttribute="bottom" constant="48" id="I3a-iD-FlQ"/>
+                            <constraint firstAttribute="bottom" secondItem="gRp-n7-e8h" secondAttribute="bottom" id="J3K-RG-u7s"/>
+                            <constraint firstItem="gRp-n7-e8h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XUd-SB-Srv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gRp-n7-e8h" secondAttribute="trailing" id="fhF-ce-tFr"/>
+                            <constraint firstItem="UIM-9p-Zrv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="44" id="s1W-6r-bOb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UIM-9p-Zrv" secondAttribute="trailing" id="wQd-ym-7hE"/>
+                            <constraint firstItem="gRp-n7-e8h" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zvI-dm-NYa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundPic" destination="UIM-9p-Zrv" id="TU1-hd-3mo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="92"/>
+            <point key="canvasLocation" x="186.95652173913044" y="91.741071428571431"/>
         </scene>
     </scenes>
     <resources>

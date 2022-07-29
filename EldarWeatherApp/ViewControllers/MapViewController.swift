@@ -10,10 +10,10 @@ import GoogleMaps
 
 class MapViewController: UIViewController {
 
+    @IBOutlet weak var backgroundPic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        backgroundPic.image = UIImage(named: "backgroundPic")
     }
     
 

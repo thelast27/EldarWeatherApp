@@ -33,9 +33,13 @@
 		4DBE852F2890131500814A19 /* MainCurrentWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */; };
 		4DBE85302890131500814A19 /* MainCurrentWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */; };
 		4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8532289020FB00814A19 /* TabBarViewController.swift */; };
+		4DC028DF2893D4DF003371CC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC028DE2893D4DF003371CC /* MapViewController.swift */; };
+		4DC028E12893D513003371CC /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC028E02893D513003371CC /* MapViewController.storyboard */; };
+		5DB39F6E3D3202F0A9155A26 /* Pods_EldarWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9387A16E9702201E31B82199 /* Pods_EldarWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0881DED8C6CD95721A0ADF03 /* Pods-EldarWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldarWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		4D3524A5288A95C300EDF0E9 /* EldarWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EldarWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3524A8288A95C300EDF0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D3524AA288A95C300EDF0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 		4DBE852D2890131500814A19 /* MainCurrentWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrentWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		4DBE852E2890131500814A19 /* MainCurrentWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCurrentWeatherTableViewCell.xib; sourceTree = "<group>"; };
 		4DBE8532289020FB00814A19 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4DC028DE2893D4DF003371CC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4DC028E02893D513003371CC /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		9387A16E9702201E31B82199 /* Pods_EldarWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EldarWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42B9FD9DA0B84CE1016EA34 /* Pods-EldarWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldarWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB046C0288AA0A700583567 /* SnapKit in Frameworks */,
+				5DB39F6E3D3202F0A9155A26 /* Pods_EldarWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +91,8 @@
 			children = (
 				4D3524A7288A95C300EDF0E9 /* EldarWeatherApp */,
 				4D3524A6288A95C300EDF0E9 /* Products */,
+				9443C85B862C53C1DFF0C915 /* Pods */,
+				7EFC32341BC9F6166B7B9913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +127,7 @@
 			children = (
 				4D3524AC288A95C300EDF0E9 /* MainViewController.swift */,
 				4DBE8532289020FB00814A19 /* TabBarViewController.swift */,
+				4DC028DE2893D4DF003371CC /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3524AE288A95C300EDF0E9 /* Main.storyboard */,
+				4DC028E02893D513003371CC /* MapViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -222,6 +235,23 @@
 			path = MainCurrentWeatherCells;
 			sourceTree = "<group>";
 		};
+		7EFC32341BC9F6166B7B9913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9387A16E9702201E31B82199 /* Pods_EldarWeatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9443C85B862C53C1DFF0C915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E42B9FD9DA0B84CE1016EA34 /* Pods-EldarWeatherApp.debug.xcconfig */,
+				0881DED8C6CD95721A0ADF03 /* Pods-EldarWeatherApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3524B9288A95C500EDF0E9 /* Build configuration list for PBXNativeTarget "EldarWeatherApp" */;
 			buildPhases = (
+				8FD67438EE93EFE9E0709886 /* [CP] Check Pods Manifest.lock */,
 				4D3524A1288A95C300EDF0E9 /* Sources */,
 				4D3524A2288A95C300EDF0E9 /* Frameworks */,
 				4D3524A3288A95C300EDF0E9 /* Resources */,
+				0EA69FB44B13AF99750298B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +323,7 @@
 				4D3524B2288A95C500EDF0E9 /* Assets.xcassets in Resources */,
 				4DBE852A288FE6B300814A19 /* MainDailyTableViewCell.xib in Resources */,
 				4D3524B0288A95C300EDF0E9 /* Main.storyboard in Resources */,
+				4DC028E12893D513003371CC /* MapViewController.storyboard in Resources */,
 				4D3524CB288A9D7A00EDF0E9 /* HourlyCollectionViewCell.xib in Resources */,
 				4DBE8524288FE52900814A19 /* DailyTableViewCell.xib in Resources */,
 				4DBE85302890131500814A19 /* MainCurrentWeatherTableViewCell.xib in Resources */,
@@ -298,6 +331,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA69FB44B13AF99750298B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD67438EE93EFE9E0709886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EldarWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D3524A1288A95C300EDF0E9 /* Sources */ = {
@@ -317,6 +392,7 @@
 				4D3524C3288A9B7D00EDF0E9 /* WeatherManager.swift in Sources */,
 				4D3524A9288A95C300EDF0E9 /* AppDelegate.swift in Sources */,
 				4DBE852F2890131500814A19 /* MainCurrentWeatherTableViewCell.swift in Sources */,
+				4DC028DF2893D4DF003371CC /* MapViewController.swift in Sources */,
 				4D3524AB288A95C300EDF0E9 /* SceneDelegate.swift in Sources */,
 				4D3524CA288A9D7A00EDF0E9 /* HourlyCollectionViewCell.swift in Sources */,
 				4DBE8518288FE38800814A19 /* HourlyWeatherModel.swift in Sources */,
@@ -462,6 +538,7 @@
 		};
 		4D3524BA288A95C500EDF0E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42B9FD9DA0B84CE1016EA34 /* Pods-EldarWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +567,7 @@
 		};
 		4D3524BB288A95C500EDF0E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0881DED8C6CD95721A0ADF03 /* Pods-EldarWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
