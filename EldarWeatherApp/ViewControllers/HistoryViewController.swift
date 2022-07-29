@@ -6,13 +6,18 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var historyTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        historyTableView.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryTableViewCell")
 
-        // Do any additional setup after loading the view.
+   
     }
     
 
