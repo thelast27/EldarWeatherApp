@@ -35,6 +35,7 @@
 		4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8532289020FB00814A19 /* TabBarViewController.swift */; };
 		4DC028DF2893D4DF003371CC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC028DE2893D4DF003371CC /* MapViewController.swift */; };
 		4DC028E12893D513003371CC /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC028E02893D513003371CC /* MapViewController.storyboard */; };
+		4DC028E32893DB39003371CC /* MapVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC028E22893DB39003371CC /* MapVC+Extension.swift */; };
 		5DB39F6E3D3202F0A9155A26 /* Pods_EldarWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9387A16E9702201E31B82199 /* Pods_EldarWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		4DBE8532289020FB00814A19 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4DC028DE2893D4DF003371CC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4DC028E02893D513003371CC /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		4DC028E22893DB39003371CC /* MapVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Extension.swift"; sourceTree = "<group>"; };
 		9387A16E9702201E31B82199 /* Pods_EldarWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EldarWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42B9FD9DA0B84CE1016EA34 /* Pods-EldarWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EldarWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-EldarWeatherApp/Pods-EldarWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 			children = (
 				4D3524C6288A9D1700EDF0E9 /* MainViewController+Extension.swift */,
 				4D3524CC288A9DEE00EDF0E9 /* Int+Extension.swift */,
+				4DC028E22893DB39003371CC /* MapVC+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				4D3524D0288A9E2E00EDF0E9 /* MainHourlyTableViewCell.swift in Sources */,
 				4D3524C7288A9D1700EDF0E9 /* MainViewController+Extension.swift in Sources */,
 				4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */,
+				4DC028E32893DB39003371CC /* MapVC+Extension.swift in Sources */,
 				4D3524CD288A9DEE00EDF0E9 /* Int+Extension.swift in Sources */,
 				4DBE8533289020FB00814A19 /* TabBarViewController.swift in Sources */,
 				4D3524C3288A9B7D00EDF0E9 /* WeatherManager.swift in Sources */,
