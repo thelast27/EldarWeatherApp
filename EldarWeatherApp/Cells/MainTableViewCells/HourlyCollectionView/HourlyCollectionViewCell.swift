@@ -43,10 +43,7 @@ class HourlyCollectionViewCell: UICollectionViewCell {
             make.bottom.equalToSuperview().inset(5)
             make.top.equalTo(weatherIcon.snp.bottom).inset(5)
         }
-        
-
-
-        
+         
     } 
     
     func update(date: HourlyWeatherData) {
