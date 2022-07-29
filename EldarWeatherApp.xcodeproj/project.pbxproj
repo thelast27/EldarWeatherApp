@@ -29,6 +29,7 @@
 		4D86F8272894081800F393D7 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */; };
 		4D86F82A289408EF00F393D7 /* RealmDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F829289408EF00F393D7 /* RealmDataBaseManager.swift */; };
 		4D86F82C2894092500F393D7 /* RealmWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F82B2894092500F393D7 /* RealmWeatherModel.swift */; };
+		4D86F82E28940A0800F393D7 /* HistoryVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86F82D28940A0800F393D7 /* HistoryVC + Extension.swift */; };
 		4DB046C0288AA0A700583567 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB046BF288AA0A700583567 /* SnapKit */; };
 		4DBE8517288FE38800814A19 /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */; };
 		4DBE8518288FE38800814A19 /* HourlyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */; };
@@ -71,6 +72,7 @@
 		4D86F8252894081800F393D7 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		4D86F829289408EF00F393D7 /* RealmDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataBaseManager.swift; sourceTree = "<group>"; };
 		4D86F82B2894092500F393D7 /* RealmWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWeatherModel.swift; sourceTree = "<group>"; };
+		4D86F82D28940A0800F393D7 /* HistoryVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryVC + Extension.swift"; sourceTree = "<group>"; };
 		4DBE8513288FE38800814A19 /* DailyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8514288FE38800814A19 /* HourlyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherModel.swift; sourceTree = "<group>"; };
 		4DBE8515288FE38800814A19 /* GeocodingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingModel.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				4D3524C6288A9D1700EDF0E9 /* MainViewController+Extension.swift */,
 				4D3524CC288A9DEE00EDF0E9 /* Int+Extension.swift */,
 				4DC028E22893DB39003371CC /* MapVC+Extension.swift */,
+				4D86F82D28940A0800F393D7 /* HistoryVC + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D86F82C2894092500F393D7 /* RealmWeatherModel.swift in Sources */,
+				4D86F82E28940A0800F393D7 /* HistoryVC + Extension.swift in Sources */,
 				4DBE8529288FE6B300814A19 /* MainDailyTableViewCell.swift in Sources */,
 				4D3524C5288A9BE000EDF0E9 /* APIManager.swift in Sources */,
 				4DBE8523288FE52900814A19 /* DailyTableViewCell.swift in Sources */,
