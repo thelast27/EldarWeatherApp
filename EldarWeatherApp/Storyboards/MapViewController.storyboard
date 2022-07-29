@@ -28,7 +28,7 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcL-eb-5xT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
+                                <rect key="frame" x="0.0" y="87" width="414" height="530"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqV-4F-ZYk">
@@ -67,7 +67,7 @@
                             <constraint firstAttribute="bottom" secondItem="qcL-eb-5xT" secondAttribute="bottom" constant="279" id="frQ-dl-yUD"/>
                             <constraint firstItem="UIM-9p-Zrv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="44" id="s1W-6r-bOb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UIM-9p-Zrv" secondAttribute="trailing" id="wQd-ym-7hE"/>
-                            <constraint firstItem="qcL-eb-5xT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="xxW-mC-gqJ"/>
+                            <constraint firstItem="qcL-eb-5xT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="87" id="xxW-mC-gqJ"/>
                             <constraint firstItem="gRp-n7-e8h" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zvI-dm-NYa"/>
                         </constraints>
                     </view>
