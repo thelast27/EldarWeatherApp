@@ -35,6 +35,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Q52-JP-P9F" secondAttribute="bottom" constant="20" id="0Wu-G8-lrH"/>
                     <constraint firstItem="Apj-sb-nHw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="A0T-9H-hBd"/>
@@ -50,6 +51,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="coordinateLabel" destination="34V-MU-eh5" id="2jM-DV-Pad"/>
                 <outlet property="dateLabel" destination="Apj-sb-nHw" id="YrQ-Se-OBt"/>

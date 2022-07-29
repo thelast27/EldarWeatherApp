@@ -16,7 +16,7 @@ class HistoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = .lightGray
+        backgroundColor = .lightGray.withAlphaComponent(0.5)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
