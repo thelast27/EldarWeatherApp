@@ -12,17 +12,16 @@ import RealmSwift
 
 protocol RealmDataBaseProtocol {
   func receiveData(data: CurrentAndForecastWeather)
-    func getData() -> [WeatherForRealm]
+    func getData() -> Results<WeatherForRealm>
 }
 
-var realm = try! Realm()
-var resultsRealmData: Results<WeatherForRealm>! = realm.objects(WeatherForRealm.self)
 var notificationToken: NotificationToken?
 
 
 
 class RealmManager: RealmDataBaseProtocol {
 
+    var realm = try! Realm()
     
     init() {
         var configuration = Realm.Configuration()
@@ -85,8 +84,8 @@ class RealmManager: RealmDataBaseProtocol {
         }
     }
     
-    func getData() -> [WeatherForRealm] {
-        resultsRealmData.reversed()
+    func getData() -> Results<WeatherForRealm> {
+        return realm.objects(WeatherForRealm.self)
     }
 }
 

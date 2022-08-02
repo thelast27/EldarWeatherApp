@@ -13,11 +13,18 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var historyTableView: UITableView!
     @IBOutlet weak var backgroundPic: UIImageView!
     
+    var resultsRealmData: Results<WeatherForRealm>!
+    private var realmManager: RealmDataBaseProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundPic.image = UIImage(named: "backgroundPic")
         historyTableView.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryTableViewCell")
         
+        realmManager = RealmManager()
+        
+        resultsRealmData = realmManager.getData().sorted(byKeyPath: "time", ascending: false)
+
         notificationToken = resultsRealmData.observe { [weak self] (changes: RealmCollectionChange) in
             guard let tableView = self?.historyTableView else { return }
             switch changes {
