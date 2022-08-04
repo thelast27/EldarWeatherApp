@@ -9,32 +9,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainDailyTableViewCell" id="KGk-i7-Jjw" customClass="MainDailyTableViewCell" customModule="EldarWeatherApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainDailyTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="MainDailyTableViewCell" customModule="EldarWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sPK-yJ-9ck">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvn-6u-u0a">
+                        <rect key="frame" x="31" y="20" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWL-s5-kWc">
+                        <rect key="frame" x="138" y="13" width="44" height="34"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1R-tN-8xT">
+                        <rect key="frame" x="190" y="20" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="sPK-yJ-9ck" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qr8-Nm-gN3"/>
-                    <constraint firstItem="sPK-yJ-9ck" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ceT-v7-DjB"/>
-                    <constraint firstAttribute="trailing" secondItem="sPK-yJ-9ck" secondAttribute="trailing" id="sUD-fo-UKi"/>
-                    <constraint firstAttribute="bottom" secondItem="sPK-yJ-9ck" secondAttribute="bottom" id="tL9-jt-Gjf"/>
+                    <constraint firstAttribute="bottom" secondItem="IWL-s5-kWc" secondAttribute="bottom" constant="13" id="BWx-OC-ZzP"/>
+                    <constraint firstItem="e1R-tN-8xT" firstAttribute="leading" secondItem="IWL-s5-kWc" secondAttribute="trailing" constant="8" id="Cyz-4u-jDy"/>
+                    <constraint firstItem="e1R-tN-8xT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="IRU-QF-LsN"/>
+                    <constraint firstItem="jvn-6u-u0a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ivw-fh-HxX"/>
+                    <constraint firstItem="IWL-s5-kWc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Pxj-Zn-5nk"/>
+                    <constraint firstAttribute="trailing" secondItem="e1R-tN-8xT" secondAttribute="trailing" constant="88" id="fB5-Te-WOG"/>
+                    <constraint firstAttribute="bottom" secondItem="jvn-6u-u0a" secondAttribute="bottom" constant="19" id="jv6-GS-TxG"/>
+                    <constraint firstItem="IWL-s5-kWc" firstAttribute="leading" secondItem="jvn-6u-u0a" secondAttribute="trailing" constant="65" id="sSt-ZK-GjM"/>
+                    <constraint firstAttribute="bottom" secondItem="e1R-tN-8xT" secondAttribute="bottom" constant="19" id="t9p-4x-unG"/>
+                    <constraint firstItem="jvn-6u-u0a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="z4l-xk-LYW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="tableView" destination="sPK-yJ-9ck" id="Cto-kC-axi"/>
+                <outlet property="dayLable" destination="jvn-6u-u0a" id="lhF-Ui-sVD"/>
+                <outlet property="tempLable" destination="e1R-tN-8xT" id="b2y-Uq-dyg"/>
+                <outlet property="weatherConditionImage" destination="IWL-s5-kWc" id="3kK-cT-G6f"/>
             </connections>
-            <point key="canvasLocation" x="132" y="93"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-38.169642857142854"/>
         </tableViewCell>
     </objects>
 </document>

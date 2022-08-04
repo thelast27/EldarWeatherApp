@@ -15,7 +15,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == 0 {
+            return 1
+        } else if section == 1 {
+            return 1
+        } else if section == 2 {
+            return dailyWeather?.count ?? 0
+        }
+       return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,7 +41,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
        } else if indexPath.section == 2 {
            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainDailyTableViewCell", for: indexPath) as? MainDailyTableViewCell else { return UITableViewCell() }
            if let daily = dailyWeather {
-               cell.update(with: daily)
+               cell.update(date: daily[indexPath.row])
            }
            return cell
        }
@@ -51,7 +58,7 @@ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->
     } else if indexPath.section == 1 {
         return 150
     } else if indexPath.section == 2 {
-        return 450
+        return 80
     }
     return 150
 }

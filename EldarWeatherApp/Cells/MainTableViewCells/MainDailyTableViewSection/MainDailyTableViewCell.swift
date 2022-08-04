@@ -9,47 +9,37 @@ import UIKit
 
 class MainDailyTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var tableView: UITableView!
     var dailyWeather: [DailyWeatherData]?
-
+    
+    @IBOutlet weak var dayLable: UILabel!
+    
+    @IBOutlet weak var weatherConditionImage: UIImageView!
+    
+    @IBOutlet weak var tempLable: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: DailyTableViewCell.key, bundle: nil), forCellReuseIdentifier: DailyTableViewCell.key)
+        self.selectionStyle = .none
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    func update(with date: [DailyWeatherData]) {
-        self.dailyWeather = date
-        self.tableView.reloadData()
-    }
-
     
-}
-
-extension MainDailyTableViewCell: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dailyWeather?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: DailyTableViewCell.key, for: indexPath) as? DailyTableViewCell else { return UITableViewCell() }
-        if let daily = dailyWeather {
-            cell.update(date: daily[indexPath.row])
-            return cell
+    func update(date: DailyWeatherData) {
+        guard let dt = date.dt, let temp = date.temp?.day, let icon = date.weather?.first?.icon else { return }
+        let endpoint = Endpoint.getIcon(icon: "\(icon)")
+        DispatchQueue.global(qos: .utility).async {
+            guard let iconData = try? Data(contentsOf: endpoint.url) else { return }
+            DispatchQueue.main.async {
+                self.weatherConditionImage.image = UIImage(data: iconData)
+            }
         }
-        return UITableViewCell()
+        dayLable.text = dt.updateDateFormat(dateFormat: .days)
+        tempLable.text = "\(Int(temp)) °C"
+        
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
     
 }
