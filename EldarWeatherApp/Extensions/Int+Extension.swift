@@ -11,7 +11,7 @@ extension Int {
     func updateDateFormat(dateFormat: DateFormat) -> String {
         let date = Date(timeIntervalSince1970: TimeInterval(self))
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "ru_RU")
+        dateFormatter.locale = Locale(identifier: "en_US")
         dateFormatter.dateFormat = dateFormat.getDateFormat
         dateFormatter.timeZone = .current
         return dateFormatter.string(from: date)
