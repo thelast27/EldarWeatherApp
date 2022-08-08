@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import SnapKit
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -61,18 +62,27 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-            let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 0))
-            let label = UILabel()
-            headerView.addSubview(label)
-            
+            let headerView = UIView()
+            headerView.snp.makeConstraints { make in
+                make.width.equalTo(100)
+                make.height.equalTo(0)
+            }
             return headerView
         }
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
-                 let label = UILabel()
-                 label.frame = CGRect.init(x: 5, y: -5, width: headerView.frame.width-10, height: headerView.frame.height-10)
-                 label.font = .boldSystemFont(ofSize: 16)
-                 label.textColor = .gray
-                 headerView.addSubview(label)
+        let headerView = UIView()
+        let label = UILabel()
+        headerView.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.top.equalTo(headerView.snp.top).inset(6)
+            make.bottom.equalTo(headerView.snp.bottom).inset(6)
+            make.leading.equalTo(headerView.snp.leading).inset(0)
+            make.trailing.equalTo(headerView.snp.trailing).inset(0)
+            make.width.equalTo(headerView.snp.width).inset(0)
+  
+        }
+        label.font = .boldSystemFont(ofSize: 16)
+        label.textColor = .gray
+        headerView.addSubview(label)
         
         if section == 1 {
             label.text = "Weather forecast for 24h"
@@ -83,9 +93,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UIView()
     }
-    
-    //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    //         return 50
-    //     }
     
 }
