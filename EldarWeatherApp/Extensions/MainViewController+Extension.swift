@@ -83,14 +83,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         label.textColor = .gray
         headerView.addSubview(label)
         
-        if section == 1 {
-            label.text = "Weather forecast for 24h"
-            return headerView
-        } else if section == 2 {
-            label.text = "Weather forecast for 7 days"
-            return headerView
-        }
-        return UIView()
+        label.text = section == 1 ? "Weather forecast for 24h" : "Weather forecast for 7 days"
+        return headerView
     }
     
 }
