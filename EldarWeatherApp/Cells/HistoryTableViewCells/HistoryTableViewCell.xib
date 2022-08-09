@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" id="KGk-i7-Jjw" customClass="HistoryTableViewCell" customModule="EldarWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34V-MU-eh5">
+                        <rect key="frame" x="28" y="18" width="256" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q52-JP-P9F">
+                        <rect key="frame" x="28" y="79" width="272" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-sb-nHw">
+                        <rect key="frame" x="28" y="50" width="256" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Q52-JP-P9F" secondAttribute="bottom" constant="20" id="0Wu-G8-lrH"/>
+                    <constraint firstItem="Apj-sb-nHw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="A0T-9H-hBd"/>
+                    <constraint firstItem="Q52-JP-P9F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="CwU-WI-C89"/>
+                    <constraint firstItem="34V-MU-eh5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="G6i-9X-ar2"/>
+                    <constraint firstItem="Q52-JP-P9F" firstAttribute="top" secondItem="Apj-sb-nHw" secondAttribute="bottom" constant="8" id="NgB-5g-TPG"/>
+                    <constraint firstAttribute="trailing" secondItem="Q52-JP-P9F" secondAttribute="trailing" constant="20" id="RQn-pe-iG7"/>
+                    <constraint firstItem="Apj-sb-nHw" firstAttribute="top" secondItem="34V-MU-eh5" secondAttribute="bottom" constant="11" id="Xp8-dv-EOb"/>
+                    <constraint firstAttribute="trailing" secondItem="Apj-sb-nHw" secondAttribute="trailing" constant="36" id="ZGz-7t-TWW"/>
+                    <constraint firstItem="Apj-sb-nHw" firstAttribute="top" secondItem="34V-MU-eh5" secondAttribute="bottom" constant="11" id="dgJ-45-Jac"/>
+                    <constraint firstItem="34V-MU-eh5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="kZk-bv-no5"/>
+                    <constraint firstAttribute="trailing" secondItem="34V-MU-eh5" secondAttribute="trailing" constant="36" id="l5v-EY-gLB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="coordinateLabel" destination="34V-MU-eh5" id="2jM-DV-Pad"/>
+                <outlet property="dateLabel" destination="Apj-sb-nHw" id="YrQ-Se-OBt"/>
+                <outlet property="tempLabel" destination="Q52-JP-P9F" id="1Uu-sQ-hzc"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

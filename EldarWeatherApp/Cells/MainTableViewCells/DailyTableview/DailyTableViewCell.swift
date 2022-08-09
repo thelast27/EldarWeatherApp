@@ -17,6 +17,7 @@ class DailyTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         
         dayLabel.text = ""
         tempLabel.text = ""

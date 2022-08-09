@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "797D1DCA-5BF2-40B4-9D91-43A442F9464F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86FEAA6E-2AC5-4244-939A-8FD2AFD546DA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EldarWeatherApp/Cells/MainTableViewCells/MainDailyTableViewSection/MainDailyTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "update(date:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86FEAA6E-2AC5-4244-939A-8FD2AFD546DA - be4696b6dc02bb9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.MainDailyTableViewCell.update(date: EldarWeatherApp.DailyWeatherData) -&gt; ()"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/Cells/MainTableViewCells/MainDailyTableViewSection/MainDailyTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "310">
+               </Location>
+               <Location
+                  uuid = "86FEAA6E-2AC5-4244-939A-8FD2AFD546DA - be4696b6dc02bb9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EldarWeatherApp.MainDailyTableViewCell.update(date: EldarWeatherApp.DailyWeatherData) -&gt; ()"
+                  moduleName = "EldarWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eldargarbuzov/Desktop/HW/EldarWeatherApp/EldarWeatherApp/EldarWeatherApp/Cells/MainTableViewCells/MainDailyTableViewSection/MainDailyTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8g-h2-vNB">
-                        <rect key="frame" x="97" y="28" width="127" height="29"/>
+                        <rect key="frame" x="16" y="28" width="288" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X12-Ur-haq">
-                        <rect key="frame" x="77" y="154" width="164" height="29"/>
+                        <rect key="frame" x="16" y="154" width="288" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -54,9 +54,9 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="X12-Ur-haq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="77" id="7m8-GJ-F5Y"/>
+                    <constraint firstItem="X12-Ur-haq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7m8-GJ-F5Y"/>
                     <constraint firstItem="X12-Ur-haq" firstAttribute="top" secondItem="z9k-ft-nU3" secondAttribute="bottom" constant="37" id="H7u-Ik-zvP"/>
-                    <constraint firstItem="u8g-h2-vNB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="97" id="Iyv-tr-4Mv"/>
+                    <constraint firstItem="u8g-h2-vNB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Iyv-tr-4Mv"/>
                     <constraint firstItem="u8g-h2-vNB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="28" id="N9z-F4-2iL"/>
                     <constraint firstItem="QnQ-gg-O0r" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SlH-0F-x3q"/>
                     <constraint firstAttribute="trailing" secondItem="z9k-ft-nU3" secondAttribute="trailing" constant="102" id="T04-42-EH1"/>
@@ -64,8 +64,8 @@
                     <constraint firstItem="z9k-ft-nU3" firstAttribute="top" secondItem="u8g-h2-vNB" secondAttribute="bottom" constant="2.5" id="XVO-G3-MAw"/>
                     <constraint firstAttribute="bottom" secondItem="QnQ-gg-O0r" secondAttribute="bottom" constant="30" id="d4a-pZ-SIj"/>
                     <constraint firstItem="z9k-ft-nU3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="103" id="fYH-9r-Euk"/>
-                    <constraint firstAttribute="trailing" secondItem="X12-Ur-haq" secondAttribute="trailing" constant="79" id="jBl-35-3Od"/>
-                    <constraint firstAttribute="trailing" secondItem="u8g-h2-vNB" secondAttribute="trailing" constant="96" id="lMs-Mm-9V6"/>
+                    <constraint firstAttribute="trailing" secondItem="X12-Ur-haq" secondAttribute="trailing" constant="16" id="jBl-35-3Od"/>
+                    <constraint firstAttribute="trailing" secondItem="u8g-h2-vNB" secondAttribute="trailing" constant="16" id="lMs-Mm-9V6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

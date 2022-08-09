@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="Y6W-OH-hqX" customClass="HistoryViewController" customModule="EldarWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-C0-pJh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we3-Kr-xND">
+                                <rect key="frame" x="0.0" y="-41" width="414" height="990"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cxw-jJ-Hvw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="990"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZPz-QP-Qi5">
+                                <rect key="frame" x="0.0" y="25" width="414" height="781"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" id="sdu-yb-KaJ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sdu-yb-KaJ" id="ekf-T7-Wf0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="2Hf-KS-Iph"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Yqg-cn-sAi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZPz-QP-Qi5" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="5y5-7C-Thh"/>
+                            <constraint firstItem="gxW-C0-pJh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6Cx-hE-Lhc"/>
+                            <constraint firstItem="ZPz-QP-Qi5" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="25" id="6Uh-IM-Rmb"/>
+                            <constraint firstItem="gxW-C0-pJh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-44" id="GNz-U9-auh"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPz-QP-Qi5" secondAttribute="bottom" constant="90" id="Igy-Tf-6cb"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPz-QP-Qi5" secondAttribute="trailing" id="Jhf-qQ-EVM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gxW-C0-pJh" secondAttribute="trailing" id="NKC-fO-6oX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="we3-Kr-xND" secondAttribute="trailing" id="Oyr-Pc-ZAZ"/>
+                            <constraint firstItem="we3-Kr-xND" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-85" id="U4e-Zr-LqR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="we3-Kr-xND" secondAttribute="bottom" constant="-87" id="rkc-vv-3iv"/>
+                            <constraint firstItem="we3-Kr-xND" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tfh-sz-sRt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gxW-C0-pJh" secondAttribute="bottom" constant="-34" id="w2X-36-Nj1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundPic" destination="gxW-C0-pJh" id="8i0-rQ-44K"/>
+                        <outlet property="historyTableView" destination="ZPz-QP-Qi5" id="bJA-nS-5yU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="48.214285714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
